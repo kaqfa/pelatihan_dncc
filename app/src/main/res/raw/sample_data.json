@@ -1,0 +1,44 @@
+[
+  {
+    "name": "Makanan Korea",
+    "user": "Ahli Korean",
+    "cooktime": 25,
+    "desc": "Makanan ala korea yang diminati anak muda di seluruh dunia. Sangat enak disajikan ketika hangat",
+    "imageurl": "https://dinus.ac.id"
+  },
+  {
+    "name": "Ayam Goreng Rambut",
+    "user": "Ka Ep Ci Chicken",
+    "cooktime": 10,
+    "desc": "Ayam goreng dengan toping telur yang renyah dan gurih, enak disajikan dengan sambal khas",
+    "imageurl": "https://dinus.ac.id"
+  },
+  {
+    "name": "Mie Goreng Telur",
+    "user": "Istana Mie",
+    "cooktime": 15,
+    "desc": "Mie goreng dambaan setiap anak muda, mudah dibuat dan tetap enak karena ditambah telur",
+    "imageurl": "https://dinus.ac.id"
+  },
+  {
+    "name": "Daging Steak Meleleh",
+    "user": "Masakan Rumahan",
+    "cooktime": 40,
+    "desc": "Daging wagyu nomer satu di Jepang cukup dipanasi dan ditambahi mentega, sudah enak rasanya",
+    "imageurl": "https://dinus.ac.id"
+  },
+  {
+    "name": "Sate Kambing",
+    "user": "Masakan Rumahan",
+    "cooktime": 20,
+    "desc": "Sate kambing muda bawah tiga bulan, daging empuk gurih manis dan lezat",
+    "imageurl": "https://dinus.ac.id"
+  },
+  {
+    "name": "Mie Ayam",
+    "user": "Istana Mie",
+    "cooktime": 15,
+    "desc": "Mie ayam buatan istana mie ini sangat enak sekali, dengan tambahan toping mewah di atasnya",
+    "imageurl": "https://dinus.ac.id"
+  }
+]
