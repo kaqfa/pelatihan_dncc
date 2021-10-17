@@ -10,7 +10,7 @@
     <ImageView
         android:id="@+id/imgItemFood"
         android:layout_width="0dp"
-        android:layout_height="200dp"
+        android:layout_height="150dp"
         android:scaleType="centerCrop"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -19,14 +19,16 @@
 
     <TextView
         android:id="@+id/txtItemFood"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="5dp"
         android:fontFamily="sans-serif-medium"
         android:textColor="@color/black"
         android:textSize="20sp"
+        app:layout_constraintHorizontal_weight="1"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imgItemFood"
+        app:layout_constraintEnd_toStartOf="@id/txtItemTime"
         tools:text="@sample/nama_makanan" />
 
     <TextView
@@ -46,6 +48,7 @@
     <TextView
         android:id="@+id/txtItemTime"
         android:layout_width="110dp"
+        app:layout_constraintHorizontal_weight="1"
         android:layout_height="50dp"
         android:layout_marginTop="5dp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -63,5 +66,5 @@
         android:text="Deskripsi makanan yang dituliskan secara panjang lebar di sini, tapi tidak boleh terlalu panjang"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txtItemTime" />
+        app:layout_constraintTop_toBottomOf="@+id/txtItemUser" />
 </androidx.constraintlayout.widget.ConstraintLayout>

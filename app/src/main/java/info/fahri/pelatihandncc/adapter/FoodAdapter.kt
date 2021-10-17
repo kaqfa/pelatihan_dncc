@@ -1,6 +1,7 @@
 package info.fahri.pelatihandncc.adapter
 
 import android.content.Intent
+import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -9,9 +10,13 @@ import android.widget.TextView
 import androidx.constraintlayout.widget.ConstraintLayout
 import androidx.recyclerview.widget.RecyclerView
 import com.google.gson.annotations.SerializedName
+import com.squareup.picasso.Callback
+import com.squareup.picasso.Picasso
 import info.fahri.pelatihandncc.FoodDetailActivity
 import info.fahri.pelatihandncc.R
+import kotlinx.android.synthetic.main.activity_food_detail.*
 import java.io.Serializable
+import java.lang.Exception
 
 class FoodAdapter(val dataset: ArrayList<Food>): RecyclerView.Adapter<FoodAdapter.ViewHolder>() {
 
@@ -43,7 +48,18 @@ class FoodAdapter(val dataset: ArrayList<Food>): RecyclerView.Adapter<FoodAdapte
         holder.txtItemuser.text = dataset[position].user
         holder.txtItemTime.text = dataset[position].cookTime.toString()+" menit"
         holder.txtItemDesc.text = dataset[position].desc
-        holder.imgFood.setImageResource(R.drawable.hot_plate)
+//        holder.imgFood.setImageResource(R.drawable.sop_daging)
+
+        Picasso.get().load(dataset[position].image)
+                .placeholder(R.drawable.sop_daging)// bisa diganti dengan gambar no-image
+                .error(R.drawable.hot_plate)// diganti dengan gambar image broken
+                .into(holder.imgFood, object: Callback {
+                    override fun onSuccess(){}
+
+                    override fun onError(e: Exception?) {
+                        Log.e("Picasso", e.toString())
+                    }
+                })
 
         holder.layoutItem.setOnClickListener{
             val context = holder.itemView.context

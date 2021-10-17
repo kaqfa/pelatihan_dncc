@@ -26,9 +26,9 @@ class FoodDetailActivity : AppCompatActivity() {
         txtDetailUser.text = food.user
         txtDetailDesc.text = food.desc
 
-        Picasso.get().load("https://backpanel.kemlu.go.id/PublishingImages/CC%20sate%20ayam%20madura/SM1.JPG")
-            .placeholder(R.drawable.sop_daging)
-            .error(R.drawable.hot_plate)
+        Picasso.get().load(food.image)
+            .placeholder(R.drawable.sop_daging)// bisa diganti dengan gambar no-image
+            .error(R.drawable.hot_plate)// diganti dengan gambar image broken
             .into(imgDetailFood, object: Callback{
                 override fun onSuccess(){}
 
